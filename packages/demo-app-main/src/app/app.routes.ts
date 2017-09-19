@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: 'app-route-placeholder',
   template: `
-    <div>To Do ...</div>
+    <p>To Do ...</p>
   `
 })
 export class RoutePlaceholderComponent { }
@@ -16,10 +16,7 @@ export const appRoutes: Routes = [
     component: HomeComponent,
     pathMatch: "full"
   },
-  {
-    path: "one",
-    component: RoutePlaceholderComponent
-  },
+  // Path "one" merged from example-one module.
   {
     path: "two",
     component: RoutePlaceholderComponent
