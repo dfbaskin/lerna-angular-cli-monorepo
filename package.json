@@ -1,0 +1,16 @@
+{
+  "name": "lerna-angular-cli-monorepo",
+  "version": "1.0.0",
+  "description": "Demonstration of using Lerna with Angular CLI in a monorepo.",
+  "keywords": [
+    "lerna",
+    "angular",
+    "monorepo",
+    "routing"
+  ],
+  "author": "Dave F. Baskin <dfbaskin@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.1.2"
+  }
+}
