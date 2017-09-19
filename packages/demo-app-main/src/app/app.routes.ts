@@ -19,7 +19,7 @@ export const appRoutes: Routes = [
   // Path "one" merged from example-one module.
   {
     path: "two",
-    component: RoutePlaceholderComponent
+    loadChildren: "./modules/example-two/example-two.module#ExampleTwoModule"
   },
   {
     path: "three",
