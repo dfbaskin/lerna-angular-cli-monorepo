@@ -17,5 +17,5 @@ lerna run packagr
 ```
 - Run the application
 ```
-lerna run --scope demo-app-main
+lerna run start --scope demo-app-main
 ```
