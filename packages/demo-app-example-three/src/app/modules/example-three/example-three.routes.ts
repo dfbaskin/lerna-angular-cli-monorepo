@@ -1,4 +1,4 @@
-import { ModuleWithProviders} from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExampleThreeComponent } from './example-three.component';
 
