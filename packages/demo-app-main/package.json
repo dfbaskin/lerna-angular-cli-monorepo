@@ -1,6 +1,6 @@
 {
   "name": "demo-app-main",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -23,7 +23,8 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "demo-app-example-three": "^1.0.0"
   },
   "devDependencies": {
     "@angular/cli": "1.4.2",

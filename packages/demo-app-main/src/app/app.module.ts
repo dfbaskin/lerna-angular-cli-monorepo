@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { ExampleOneModule } from './modules/example-one/example-one.module';
+import { ExampleThreeModule } from 'demo-app-example-three/dist';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ExampleOneModule } from './modules/example-one/example-one.module';
   imports: [
     BrowserModule,
     AppRouterModule,
-    ExampleOneModule
+    ExampleOneModule,
+    ExampleThreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
