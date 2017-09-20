@@ -1,0 +1,11 @@
+{
+  "name": "demo-app-example-four",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@angular/core": "^4.2.4",
+    "@angular/common": "^4.2.4",
+    "@angular/router": "^4.2.4"
+  }
+}
