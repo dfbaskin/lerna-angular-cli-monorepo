@@ -13,11 +13,13 @@ export const appRoutes: Routes = [
     loadChildren: "./modules/example-two/example-two.module#ExampleTwoModule"
   },
   // Path "three" merged from example-three library module.
-  {
-    path: "four",
-    //loadChildren: "demo-app-example-four/dist#ExampleFourModule"
-    loadChildren: "../../node_modules/demo-app-example-four/dist#ExampleFourModule"
-  },
+  // // None of these options work:
+  // {
+  //   path: "four",
+  //   //loadChildren: "demo-app-example-four/dist#ExampleFourModule"
+  //   //loadChildren: "../../node_modules/demo-app-example-four/dist#ExampleFourModule"
+  //   //loadChildren: "../../../demo-app-example-four/src/app/modules/example-four/example-four.module#ExampleFourModule"
+  // },
   {
     path: "**",
     redirectTo: "/",
