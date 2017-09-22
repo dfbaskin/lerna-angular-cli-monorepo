@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { ExampleOneModule } from './modules/example-one/example-one.module';
-import { ExampleThreeModule } from 'demo-app-example-three/dist';
+import { ExampleThreeModule } from './libs/demo-app-example-three';
 
 @NgModule({
   declarations: [

@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
   "src": "src/app/modules",
-  "dest": "dist",
+  "dest": "../demo-app-main/src/app/libs/demo-app-example-four",
   "workingDirectory": ".ng_build",
   "lib": {
     "entryFile": "public_api.ts"

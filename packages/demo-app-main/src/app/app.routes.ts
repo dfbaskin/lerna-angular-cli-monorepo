@@ -1,6 +1,17 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
+// Fix for AOT compiler
+export function loadExampleFourModule() {
+  return System
+    .import('./libs/demo-app-example-four')
+    .then(function(module) {
+      return module.ExampleFourModule;
+    });
+}
+
+declare const System: any;
+
 export const appRoutes: Routes = [
   {
     path: "",
@@ -13,13 +24,18 @@ export const appRoutes: Routes = [
     loadChildren: "./modules/example-two/example-two.module#ExampleTwoModule"
   },
   // Path "three" merged from example-three library module.
-  // // None of these options work:
-  // {
-  //   path: "four",
-  //   //loadChildren: "demo-app-example-four/dist#ExampleFourModule"
-  //   //loadChildren: "../../node_modules/demo-app-example-four/dist#ExampleFourModule"
-  //   //loadChildren: "../../../demo-app-example-four/src/app/modules/example-four/example-four.module#ExampleFourModule"
-  // },
+  {
+    path: "four",
+    loadChildren: loadExampleFourModule
+    // // This syntax breaks the AOT compiler:
+    // loadChildren: function loadExampleFourModule() {
+    //   return System
+    //     .import('./libs/demo-app-example-four')
+    //     .then(function(module) {
+    //       return module.ExampleFourModule;
+    //     });
+    // }
+  },
   {
     path: "**",
     redirectTo: "/",
